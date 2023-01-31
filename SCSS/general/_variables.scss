@@ -1,0 +1,40 @@
+// fonts
+
+$primary-font-text:     'Open Sans', sans-serif;
+$primary-font-title:    'Montserrat', sans-serif;
+$primary-font-nav:      'Source Sans Pro', sans-serif;
+
+// font-size
+$default-font-banner:    80px;
+$default_font-title:     44px;
+$default_font-subtitle:  22px;
+$default-font-size:      18px;
+$font-size-btn:          14px;
+
+// color
+
+$default-color-white:    #FFFFFF;
+$default-color-blue:     #2C4058;
+$color-black:            #000000;
+$color-purple:           #7E5AFF;
+$color-blue:             #55B7FF;
+$color-blue-light:       #55B7FF;
+$color-grey:             #4B5562;
+$background-news:        linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+$background-header:      linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+$background-footer:      linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+
+// breakpoints
+
+$desktop-big:           1600px;
+$desktop:               1360px;
+$desktop-small-end:     $desktop - 1;
+$desktop-small:         1024px;
+$tablet-end:            $desktop-small - 1;
+$tablet:                768px;
+$mobile-end:            $tablet - 1;
+$mobile:                576px;
+
+// width   
+   
+$max-content-width:     1170px;
