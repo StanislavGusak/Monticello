@@ -6,14 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monticello</title>
     <meta name="description" content="WE MAKE THE WORLD BEAUTIFUL EVERYDAY">
-    <meta name="theme-color" content="#319197">
+    <!-- <meta name="theme-color" content="#319197"> -->
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="./SCSS/general/_reset.scss">
-    <link rel="stylesheet" type="text/css" href="./SCSS/style.scss">
+    <link rel="stylesheet" type="text/css" href="./SCSS/style.css">
 </head>
 <body>
-    
-
+    <header class="header">
+        <div class="header__container">
+            <div class="navigation">
+                <div class="navigation__block">
+                    <div class="header__logo">
+                        <a href="" class="header__logo-link">
+                            <img src="./images/img/Logo.png" alt="Monticello" class="logo">
+                        </a>
+                    </div>
+                    <ul class="nav">
+                        <li class="nav__list">
+                            <a href="" class="nav__list-link">
+                                ABOUT US
+                            </a>
+                        </li>
+                        <li class="nav__list">
+                            <a href="" class="nav__list-link">
+                                PROJECTS
+                            </a>
+                        </li>
+                        <li class="nav__list">
+                            <a href="" class="nav__list-link">
+                                NEWS
+                            </a>
+                        </li>
+                        <li class="nav__list">
+                            <a href="" class="nav__list-link">
+                                CONTACT
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social">
+                        <li class="social__list">
+                            <a href="" class="social__list-link btn">
+                                <svg class="icon">
+                                    <use xlink:href="./images/sprite/svg_sprite.svg#facebook"></use>
+                                </svg> 
+                            </a>
+                        </li>
+                        <li class="social__list">
+                            <a href="" class="social__list-link btn">
+                                <svg class="icon">
+                                    <use xlink:href="./images/sprite/svg_sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__list">
+                            <a href="" class="social__list-link btn">
+                                <svg class="icon">
+                                    <use xlink:href="./images/sprite/svg_sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+               
+            <div class="banner">
+                <h1 class="title">SIMPLE & MODERN</h1>
+                <p class="subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            </div>
+            <button type="button" class="btn btn-banner">
+                <svg class="icon">
+                    <use xlink:href="./images/sprite/svg_sprite.svg#below"></use>
+                </svg>
+            </button>
+        </div>
+       
+    </header>
+    <main class="main">
+        <section class="project">
+            <h2 class="project__title">WHAT WE DO</h2>
+            <section class="project__first">
+                <div class="wrapper">
+                    <div class="block">
+                        <div class="block__img">
+                            <img src="./images/img/Project-first.png" alt="Mask Group" class="block__img-inner"></img>
+                        </div>
+                        <div class="block__inner">
+                            <p class="block__inner-text">
+                                ONE WORLD
+                            </p>
+                            <h2 class="block__inner-title">
+                                TRADE CENTER
+                            </h2>
+                            <p class="block__inner-description">
+                                Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.
+                            </p>
+                            <button type="button" class="btn__inner">
+                                MORE DETAILS
+                            </button>
+                            <div class="block__inner-location">
+                                <svg class="icon">
+                                    <use xlink:href="./images/sprite/svg_sprite.svg#local"></use>
+                                </svg>
+                                <p class="location">
+                                    New York City, United States - 1776 feet 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="project__second">
+                <div class="wrapper">
+                    <div class="block">
+                        <div class="block__img">
+                            <img src="./images/img/Project-second.png" alt="building" class="block__img-inner"></img>
+                        </div>
+                        <div class="block__inner">
+                            <p class="block__inner-text">
+                                INTERNATIONAL
+                            </p>
+                            <h2 class="block__inner-title">
+                                COMMERCE CENTRE
+                            </h2>
+                            <p class="block__inner-description">
+                                Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.
+                            </p>
+                            <button type="button" class="btn__inner">
+                                MORE DETAILS
+                            </button>
+                            <div class="block__inner-location">
+                                <svg class="icon">
+                                    <use xlink:href="./images/sprite/svg_sprite.svg#local"></use>
+                                </svg>
+                                <p class="location">
+                                    Hong Kong - 1588 feet
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
 
     <!-- <svg class="icon">
         <use xlink:href="./images/sprite/svg_sprite.svg#instagram"></use>

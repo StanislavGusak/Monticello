@@ -1,0 +1,14 @@
+.header {
+    background: $background-header;
+
+    &__container {
+        background-image: url(../../images/img/background1.png);
+        padding: 330px 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto;
+        height: 43.5vw;
+        position: relative;
+    }
+}

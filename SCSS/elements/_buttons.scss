@@ -1,0 +1,42 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms ease-in-out;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    &-banner {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: transparent;
+        border: 1px solid rgba($color: $default-color-white, $alpha: 0.7);
+        cursor: pointer;
+
+        &:hover {
+            border: 1px solid rgba($color: $default-color-white, $alpha: 1);
+            background-color: $color-blue;
+        }
+
+        .icon {
+            width: 10px;
+            height: 17px;
+            color: $default-color-white;
+        }
+    }
+
+    &__inner {
+        padding: 16px 41px;
+        font-family: $primary-font-title;
+        font-size: $font-size-btn;
+        line-height: 17px;
+        color: $color-black;
+        background-color: transparent;
+        border: 1px solid $default-color-blue;
+        margin-top: 40px;
+        cursor: pointer;
+    }
+}

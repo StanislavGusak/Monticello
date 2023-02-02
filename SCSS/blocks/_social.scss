@@ -1,0 +1,26 @@
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+
+        &-link {
+            border: 1px solid rgba($color: $default-color-white, $alpha: 0.4);
+
+            &:hover {
+                border: 1px solid rgba($color: $default-color-white, $alpha: 1);
+                background-color: $color-blue;
+            }
+
+            .icon {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}

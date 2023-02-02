@@ -6,3 +6,20 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    background: $default-color-white;
+    color: $default-color-blue;
+    font-family: $primary-font-text;
+    font-size: $default-font-size;
+    font-weight: $primary-font-weight;
+    min-width: 375px;
+    max-width: $desktop-big;
+    margin: 0 auto;
+}
+
+.wrapper {
+    padding: 0;
+    margin: 0 auto;
+    max-width: $max-content-width;
+}
