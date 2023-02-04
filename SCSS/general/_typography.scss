@@ -7,7 +7,7 @@
     color: $default-color-white;
 }
 
-.subtitle {
+.banner__text {
     font-family: $primary-font-title;
     font-size: $default-font-size;
     line-height: 22px;
@@ -16,7 +16,7 @@
     color: $default-color-white;
 }
 
-.project__title {
+.subtitle {
     font-family: $primary-font-title;
     font-weight: $secondary-font-weight;
     font-size: $default-font-title;
@@ -28,7 +28,9 @@
         display: block;
         width: 100px;
         height: 1px;
-        background-color: $default-color-blue;
         margin: 0 auto 30px;
     }
 }
+
+
+

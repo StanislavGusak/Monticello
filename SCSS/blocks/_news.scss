@@ -1,0 +1,85 @@
+.news {
+    background: $background-news;
+    margin-top: 150px;
+    height: 61.1vw;
+
+    &__container {
+        background-image: url(../../images/img/background2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+        padding: 120px 0 170px;
+    }
+
+    &__block {
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: $default-color-white;
+    
+        &::before {
+            background-color: $default-color-white;
+        }
+    }
+}
+
+.post {
+    width: 33%;
+    background: $default-color-white;
+
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__inner {
+        padding: 30px 20px;
+
+        &-title {
+            font-family: $primary-font-title;
+            font-weight: $secondary-font-weight;
+            font-size: $default-font-subtitle;
+            line-height: 27px;
+        }
+
+        &-description {
+            line-height: 25px;
+            margin-top: 15px;
+        }
+
+        &-info {
+            display: flex;
+            margin-top: 39px;
+
+            .picture {
+                border: none;
+                border-radius: 50%;
+            }
+
+            .info {
+                margin-left: 20px;
+
+                &__name {
+                    font-family: $primary-font-title;
+                    line-height: 22px;
+                    margin-top: 7px;
+                }
+
+                &__data {
+                    font-family: $primary-font-title;
+                    font-size: $font-size-btn;
+                    line-height: 17px;
+                    color: $color-blue;
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+}
