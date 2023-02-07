@@ -1,0 +1,91 @@
+.contact {
+    background-image: url(../../images/img/Map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 43.1vw;
+    width: 100%;
+    position: relative;
+
+    &__form {
+        background: $default-color-white;
+        background-image: url(../../images/img/form.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-width: 770px;
+        width: 100%;
+        padding: 60px 60px 67px;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,34%);
+
+        &-title {
+
+            &::before {
+                background: $default-color-blue;
+            }
+        }
+
+        &-inner {
+            margin-top: 42px;
+            display: flex;
+            justify-content: space-between;
+
+            .contacts {
+                width: 47%;
+
+                &__info {
+                    display: flex;
+                    align-items: center;
+
+                    &:not(:first-child) {
+                        margin-top: 28px;
+                    }
+                }
+
+                .icon {
+                    width: 20px;
+                    height: 18px;
+                    color: $color-purple;
+                    margin-right: 10px;
+                }
+            }
+
+            .form {
+                width: 50%;
+                margin-left: 54px;
+                text-align: right;
+
+                .input {
+                    width: 100%;
+                    padding-bottom: 10px;
+                    border: none;
+                    border-bottom: 1px solid rgba($color: $default-color-blue, $alpha: 0.2);
+                    font-size: $default-font-size;
+                    font-family: $primary-font-title;
+                    line-height: 27px;
+                    color: rgba($color: $default-color-blue, $alpha: 0.5);
+                    outline: none;
+                    background-color: transparent;
+
+                    &::placeholder {
+                        color: rgba($color: $default-color-blue, $alpha: 0.5);
+                    }
+
+                    &:focus {
+                        border: none;
+                        border-bottom: 1px solid rgba($color: $default-color-blue, $alpha: 1);
+                        color: rgba($color: $default-color-blue, $alpha: 1);
+                    }
+                }
+
+                .email {
+                    margin-top: 33px;
+                }
+            }
+        }
+    }
+}

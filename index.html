@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monticello</title>
     <meta name="description" content="WE MAKE THE WORLD BEAUTIFUL EVERYDAY">
-    <!-- <meta name="theme-color" content="#319197"> -->
+    <meta name="theme-color" content="#319197">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/1c5ba023a7.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./SCSS/general/_reset.scss">
     <link rel="stylesheet" type="text/css" href="./SCSS/style.css">
 </head>
@@ -250,7 +251,115 @@
                 </button>
             </div>
         </section>
+        <section class="contact">
+            <div class="contact__form">
+                <h2 class="contact__form-title subtitle">
+                    GET IN TOUCH
+                </h2>
+                <div class="contact__form-inner">
+                    <div class="contacts">
+                        <div class="contacts__info">
+                            <svg class="icon">
+                                <use xlink:href="./images/sprite/contacts-sprite.svg#loc"></use>
+                            </svg>
+                            <a href="#" class="contacts__info-local link">   
+                                91 Nolan Extensions Suite 670 
+                            </a>
+                        </div>
+                       <div class="contacts__info">
+                            <svg class="icon">
+                                <use xlink:href="./images/sprite/contacts-sprite.svg#tel"></use>
+                            </svg>
+                            <a href="#" class="contacts__info-tel link">
+                                +001 356-868-2454 
+                            </a>
+                       </div>
+                       <div class="contacts__info">
+                            <svg class="icon">
+                                <use xlink:href="./images/sprite/contacts-sprite.svg#email"></use>
+                            </svg>
+                            <a href="#" class="contacts__mail link">
+                                montichello@service.com 
+                            </a>
+                       </div>
+                       <div class="contacts__info">
+                            <svg class="icon">
+                                <use xlink:href="./images/sprite/contacts-sprite.svg#time"></use>
+                            </svg>
+                            <a href="#" class="contacts__time link">
+                                From 07:05AM to 19:30PM
+                            </a>
+                       </div>
+                    </div>
+                    <form action="" class="form" target="_blank">
+                        <input type="text" class="name input" name="fname" required placeholder="Name">
+                        <input type="email" class="email input" name="email" required placeholder="Email">
+                        <button type="submit" class="btn__form btn__inner">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__block">
+                <div class="copyrights">
+                    <img src="./images/img/Logo.png" alt="Monticello" class="copyrights__logo">
+                    <p class="copyrights__text">
+                        <span class="copyrights__text-inner">Copyrights</span>  
+                        <span>2020 Montichello</span>
+                    </p>
+                </div>
+                <ul class="footer__social social">
+                    <li class="social__list">
+                        <a href="" class="social__list-link btn">
+                            <svg class="icon">
+                                <use xlink:href="./images/sprite/svg_sprite.svg#facebook"></use>
+                            </svg> 
+                        </a>
+                    </li>
+                    <li class="social__list">
+                        <a href="" class="social__list-link btn">
+                            <svg class="icon">
+                                <use xlink:href="./images/sprite/svg_sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__list">
+                        <a href="" class="social__list-link btn">
+                            <svg class="icon">
+                                <use xlink:href="./images/sprite/svg_sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <div class="group">
+        <label for="fname" >Повне ім'я:</label>
+        <input class="group-item" type="text" id="fname" name="fname" required>
+    </div>
+    <div class="group">
+        <label for="email">Email:</label>
+        <input class="group-item" type="email" id="email" name="email" required>
+    </div> -->
+<!-- 
+    <svg class="icon">
+        <use xlink:href="#contacts-email"></use>
+    </svg>
+    <svg class="icon">
+        <use xlink: href="#contacts-tel"></use>
+    </svg>
+    <svg class="icon">
+        <use xlink:href="#contacts-loc"></use>
+    </svg>
+    <svg class="icon">
+        <use xlink:href="#time"></use>
+    </svg> -->
+
+
 
     <!-- <svg class="icon">
         <use xlink:href="./images/sprite/svg_sprite.svg#instagram"></use>

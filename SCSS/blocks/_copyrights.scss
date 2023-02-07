@@ -1,0 +1,30 @@
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 770px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+
+    .copyrights {
+
+        &__text {
+            font-family: $primary-font-title;
+            font-weight: $primary-font-weight;
+            font-size: $font-size-btn;
+            line-height: 17px;
+            color: $default-color-white;
+            margin-top: 41px;
+
+            &-inner {
+
+                &::after {
+                    content: '\00a9';
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
