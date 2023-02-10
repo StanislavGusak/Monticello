@@ -5,21 +5,21 @@
     transition: all 200ms ease-in-out;
     width: 40px;
     height: 40px;
+    background-color: transparent;
+    border: 1px solid rgba($color: $default-color-white, $alpha: 0.7);
     border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid rgba($color: $default-color-white, $alpha: 1);
+        background-color: $color-blue;
+    }
 
     &-banner {
         position: absolute;
         bottom: 50px;
         left: 50%;
         transform: translate(-50%);
-        background-color: transparent;
-        border: 1px solid rgba($color: $default-color-white, $alpha: 0.7);
-        cursor: pointer;
-
-        &:hover {
-            border: 1px solid rgba($color: $default-color-white, $alpha: 1);
-            background-color: $color-blue;
-        }
 
         .icon {
             width: 10px;
@@ -48,6 +48,8 @@
         padding: 16px 41px;
         margin-top: 40px;
     }
+
+  
 
     &__gallery {
         padding: 16px 57px;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,15 @@
     <title>Monticello</title>
     <meta name="description" content="WE MAKE THE WORLD BEAUTIFUL EVERYDAY">
     <meta name="theme-color" content="#319197">
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/1c5ba023a7.css" crossorigin="anonymous">
+    <!-- <link rel="icon" type="image/x-icon" href="./images/favicon.ico"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./SCSS/general/_reset.scss">
     <link rel="stylesheet" type="text/css" href="./SCSS/style.css">
 </head>
+
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__container">
             <div class="navigation">
                 <div class="navigation__block">
@@ -22,24 +25,24 @@
                             <img src="./images/img/Logo.png" alt="Monticello" class="logo">
                         </a>
                     </div>
-                    <ul class="nav">
+                    <ul class="nav" id="menu">
                         <li class="nav__list">
-                            <a href="" class="nav__list-link">
+                            <a href="#header" class="nav__list-link">
                                 ABOUT US
                             </a>
                         </li>
                         <li class="nav__list">
-                            <a href="" class="nav__list-link">
+                            <a href="#projects" class="nav__list-link">
                                 PROJECTS
                             </a>
                         </li>
                         <li class="nav__list">
-                            <a href="" class="nav__list-link">
+                            <a href="#news" class="nav__list-link">
                                 NEWS
                             </a>
                         </li>
                         <li class="nav__list">
-                            <a href="" class="nav__list-link">
+                            <a href="#contacts" class="nav__list-link">
                                 CONTACT
                             </a>
                         </li>
@@ -49,7 +52,7 @@
                             <a href="" class="social__list-link btn">
                                 <svg class="icon">
                                     <use xlink:href="./images/sprite/svg_sprite.svg#facebook"></use>
-                                </svg> 
+                                </svg>
                             </a>
                         </li>
                         <li class="social__list">
@@ -69,9 +72,27 @@
                     </ul>
                 </div>
             </div>
-            <div class="banner">
-                <h1 class="title">SIMPLE & MODERN</h1>
-                <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            <div class="slider">
+                <div class="banner">
+                    <h1 class="title">SIMPLE & MODERN</h1>
+                    <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+                <div class="banner">
+                    <h1 class="title">PERFECT & BEAUTIFUL</h1>
+                    <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+                <div class="banner">
+                    <h1 class="title">MONTICELLO</h1>
+                    <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+                <div class="banner">
+                    <h1 class="title">MODERN & SIMPLE</h1>
+                    <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+                <div class="banner">
+                    <h1 class="title">WORLD BUILDINGS</h1>
+                    <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
             </div>
             <button type="button" class="btn btn-banner">
                 <svg class="icon">
@@ -81,7 +102,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="project">
+        <section class="project" id="projects">
             <h2 class="project__title subtitle">WHAT WE DO</h2>
             <section class="project__first">
                 <div class="wrapper">
@@ -97,7 +118,8 @@
                                 TRADE CENTER
                             </h2>
                             <p class="block__inner-description">
-                                Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.
+                                Increasing prosperity in our lives can be accomplished by having the right frame of
+                                mind. The truth is, our thoughts are very powerful.
                             </p>
                             <button type="button" class="btn__inner btn__project">
                                 MORE DETAILS
@@ -107,7 +129,7 @@
                                     <use xlink:href="./images/sprite/svg_sprite.svg#local"></use>
                                 </svg>
                                 <p class="location">
-                                    New York City, United States - 1776 feet 
+                                    New York City, United States - 1776 feet
                                 </p>
                             </div>
                         </div>
@@ -128,7 +150,8 @@
                                 COMMERCE CENTRE
                             </h2>
                             <p class="block__inner-description">
-                                Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.
+                                Successful businesses have many things in common, today we’ll look at the big ‘R’ of
+                                recognition and how a digital advertising network may help.
                             </p>
                             <button type="button" class="btn__inner btn__project">
                                 MORE DETAILS
@@ -146,7 +169,7 @@
                 </div>
             </section>
         </section>
-        <section class="news">
+        <section class="news" id="news">
             <div class="news__container">
                 <div class="wrapper">
                     <h2 class="news__title subtitle">LATEST NEWS</h2>
@@ -217,6 +240,50 @@
                                 </div>
                             </div>
                         </article>
+                        <article class="post">
+                            <img src="./images/img/photo.jpg" alt="window" class="post__img">
+                            <div class="post__inner">
+                                <h4 class="post__inner-title">
+                                    SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                                </h4>
+                                <p class="post__inner-description">
+                                    Free directories: directories are perfect for customers that are searching for...
+                                </p>
+                                <div class="post__inner-info">
+                                    <img src="./images/img/first-photo.png" alt="men" class="picture">
+                                    <div class="info">
+                                        <p class="info__name">
+                                            ALJA BRUN
+                                        </p>
+                                        <p class="info__data">
+                                            20 Jan 2020
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="post">
+                            <img src="./images/img/photo2.jpg" alt="window" class="post__img">
+                            <div class="post__inner">
+                                <h4 class="post__inner-title">
+                                    SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                                </h4>
+                                <p class="post__inner-description">
+                                    Free directories: directories are perfect for customers that are searching for...
+                                </p>
+                                <div class="post__inner-info">
+                                    <img src="./images/img/second-photo.png" alt="men" class="picture">
+                                    <div class="info">
+                                        <p class="info__name">
+                                            ALJA BRUN
+                                        </p>
+                                        <p class="info__data">
+                                            20 Jan 2020
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -228,22 +295,32 @@
                 </h2>
                 <div class="gallery__block">
                     <div class="gallery__block-first">
-                        <img src="./images/img/gallery-first.png" alt="building" class="image">
-                        <svg class="icon">
-                            <use xlink:href="./images/sprite/svg_sprite.svg#search"></use>
-                        </svg>
+                        <a data-fancybox="gallery" href="./images/img/gallery-first.png">
+                            <img class="rounded image" src="./images/img/gallery-first.png"/>
+                            <svg class="icon">
+                              <use xlink:href="./images/sprite/svg_sprite.svg#search"></use>
+                          </svg>
+                        </a>  
                     </div>
                     <div class="gallery__block-second">
-                        <img src="./images/img/gallery-second.png" alt="building" class="image">
+                        <a data-fancybox="gallery" href="./images/img/gallery-second.png">
+                            <img class="rounded image" src="./images/img/gallery-second.png"/>
+                        </a>
                     </div>
                     <div class="gallery__block-third">
-                        <img src="./images/img/gallery-third.png" alt="building" class="image">
+                        <a data-fancybox="gallery" href="./images/img/gallery-third.png">
+                            <img class="rounded image" src="./images/img/gallery-third.png"/>
+                        </a>
                     </div>
                     <div class="gallery__block-fourth">
-                        <img src="./images/img/gallery-fourth.png" alt="building" class="image">
+                        <a data-fancybox="gallery" href="./images/img/gallery-fourth.png">
+                            <img class="rounded image" src="./images/img/gallery-fourth.png"/>
+                        </a>
                     </div>
                     <div class="gallery__block-fifth">
-                        <img src="./images/img/gallery-fifth.png" alt="building" class="image">
+                        <a data-fancybox="gallery" href="./images/img/gallery-fifth.png">
+                            <img class="rounded image" src="./images/img/gallery-fifth.png"/>
+                        </a>
                     </div>
                 </div>
                 <button type="button" class="btn__gallery btn__inner">
@@ -251,7 +328,7 @@
                 </button>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contacts">
             <div class="contact__form">
                 <h2 class="contact__form-title subtitle">
                     GET IN TOUCH
@@ -262,34 +339,34 @@
                             <svg class="icon">
                                 <use xlink:href="./images/sprite/contacts-sprite.svg#loc"></use>
                             </svg>
-                            <a href="#" class="contacts__info-local link">   
-                                91 Nolan Extensions Suite 670 
+                            <a href="#" class="contacts__info-local link">
+                                91 Nolan Extensions Suite 670
                             </a>
                         </div>
-                       <div class="contacts__info">
+                        <div class="contacts__info">
                             <svg class="icon">
                                 <use xlink:href="./images/sprite/contacts-sprite.svg#tel"></use>
                             </svg>
                             <a href="#" class="contacts__info-tel link">
-                                +001 356-868-2454 
+                                +001 356-868-2454
                             </a>
-                       </div>
-                       <div class="contacts__info">
+                        </div>
+                        <div class="contacts__info">
                             <svg class="icon">
                                 <use xlink:href="./images/sprite/contacts-sprite.svg#email"></use>
                             </svg>
                             <a href="#" class="contacts__mail link">
-                                montichello@service.com 
+                                montichello@service.com
                             </a>
-                       </div>
-                       <div class="contacts__info">
+                        </div>
+                        <div class="contacts__info">
                             <svg class="icon">
                                 <use xlink:href="./images/sprite/contacts-sprite.svg#time"></use>
                             </svg>
                             <a href="#" class="contacts__time link">
                                 From 07:05AM to 19:30PM
                             </a>
-                       </div>
+                        </div>
                     </div>
                     <form action="" class="form" target="_blank">
                         <input type="text" class="name input" name="fname" required placeholder="Name">
@@ -306,7 +383,7 @@
                 <div class="copyrights">
                     <img src="./images/img/Logo.png" alt="Monticello" class="copyrights__logo">
                     <p class="copyrights__text">
-                        <span class="copyrights__text-inner">Copyrights</span>  
+                        <span class="copyrights__text-inner">Copyrights</span>
                         <span>2020 Montichello</span>
                     </p>
                 </div>
@@ -315,7 +392,7 @@
                         <a href="" class="social__list-link btn">
                             <svg class="icon">
                                 <use xlink:href="./images/sprite/svg_sprite.svg#facebook"></use>
-                            </svg> 
+                            </svg>
                         </a>
                     </li>
                     <li class="social__list">
@@ -331,62 +408,16 @@
                                 <use xlink:href="./images/sprite/svg_sprite.svg#instagram"></use>
                             </svg>
                         </a>
-                    </li> 
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
 
-    <!-- <div class="group">
-        <label for="fname" >Повне ім'я:</label>
-        <input class="group-item" type="text" id="fname" name="fname" required>
-    </div>
-    <div class="group">
-        <label for="email">Email:</label>
-        <input class="group-item" type="email" id="email" name="email" required>
-    </div> -->
-<!-- 
-    <svg class="icon">
-        <use xlink:href="#contacts-email"></use>
-    </svg>
-    <svg class="icon">
-        <use xlink: href="#contacts-tel"></use>
-    </svg>
-    <svg class="icon">
-        <use xlink:href="#contacts-loc"></use>
-    </svg>
-    <svg class="icon">
-        <use xlink:href="#time"></use>
-    </svg> -->
-
-
-
-    <!-- <svg class="icon">
-        <use xlink:href="./images/sprite/svg_sprite.svg#instagram"></use>
-    </svg>
-    <svg class="icon">
-        <use xlink:href="./images/sprite/svg_sprite.svg#local"></use>
-    </svg>
-    <svg class="icon">
-        <use xlink:href="./images/sprite/svg_sprite.svg#Logo"></use>
-    </svg>
-    <svg class="icon">
-        <use xlink:href="./images/sprite/svg_sprite.svg#search"></use>
-    </svg>
-    <svg class="icon">
-        <use xlink:href="./images/sprite/svg_sprite.svg#twitter"></use>
-    </svg>
-    <svg class="icon">
-        <use xlink:href="./images/sprite/svg_sprite.svg#arrow"></use>
-    </svg>
-    <svg class="icon">
-        <use xlink:href="./images/sprite/svg_sprite.svg#back"></use>
-    </svg>
-    <svg class="icon">
-        <use xlink:href="./images/sprite/svg_sprite.svg#below"></use>
-    </svg>
-    <svg class="icon">
-        <use xlink:href="./images/sprite/svg_sprite.svg#facebook"></use>
-    </svg> -->
+    <script src="./JS/jquery/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.umd.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./JS/main/main.js"></script>
 </body>
+
 </html>

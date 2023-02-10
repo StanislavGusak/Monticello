@@ -33,7 +33,7 @@
             margin-left: 70px;
         }
 
-        &:active>.nav__list-link::before {
+        &:hover>.nav__list-link::before {
             background-color: $default-color-white;
         }
 
@@ -43,6 +43,10 @@
             line-height: 18px;
             color: $default-color-white;
             position: relative;
+
+            &:focus.nav__list-link::before {
+                background-color: $default-color-white;
+            }
 
             &::before {
                 content: '';
