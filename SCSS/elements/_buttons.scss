@@ -21,6 +21,10 @@
         left: 50%;
         transform: translate(-50%);
 
+        @media screen and (max-width:$mobile-end) {
+            bottom: 30px;
+        }
+
         .icon {
             width: 10px;
             height: 17px;

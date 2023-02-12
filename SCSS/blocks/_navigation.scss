@@ -8,6 +8,18 @@
     align-items: center;
     width: 100%;
 
+    @media screen and (max-width:$desktop) {
+        padding: 0 50px;
+    }
+
+    @media screen and (max-width:$tablet) {
+        padding: 0 30px;
+    }
+
+    @media screen and (max-width:$mobile-end) {
+        top: 0;
+    }
+
     &__block {
         display: flex;
         justify-content: space-between;
@@ -23,6 +35,10 @@
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: $tablet-end) {
+        display: none;
+    }
+
     &__list {
         color: $default-color-white;
         display: flex;
@@ -31,6 +47,11 @@
 
         &:not(:first-child) {
             margin-left: 70px;
+
+            @media screen and (max-width:$desktop) {
+                margin-left: 50px;
+            }
+        
         }
 
         &:hover>.nav__list-link::before {
@@ -46,6 +67,7 @@
 
             &:focus.nav__list-link::before {
                 background-color: $default-color-white;
+                transition: all 300ms ease-in;
             }
 
             &::before {

@@ -2,6 +2,12 @@
     display: flex;
     justify-content: space-between;
 
+    &-header {
+        @media screen and (max-width:$tablet-end) {
+            display: none;
+        }
+    }
+
     &__list {
 
         &:not(:first-child) {

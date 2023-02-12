@@ -1,19 +1,53 @@
-.title {
-    font-family: $primary-font-title;
-    font-weight: $secondary-font-weight;
-    font-size: $default-font-banner;
-    line-height: 98px;
-    letter-spacing: 0.1em;
-    color: $default-color-white;
-}
+.banner__item {
 
-.banner__text {
-    font-family: $primary-font-title;
-    font-size: $default-font-size;
-    line-height: 22px;
-    letter-spacing: 0.3em;
-    margin-top: 20px;
-    color: $default-color-white;
+    @media screen and (max-width:$desktop-small) {
+        margin: 0 auto;
+        max-width: 75%;
+    }
+
+    &-title {
+        font-family: $primary-font-title;
+        font-weight: $secondary-font-weight;
+        font-size: $default-font-banner;
+        line-height: 98px;
+        letter-spacing: 0.1em;
+        color: $default-color-white;
+
+        @media screen and (max-width:$desktop) {
+            font-size: $font-size-title;
+            line-height: 74px;
+        }
+
+        @media screen and (max-width:$desktop-small) {
+            font-size: $default-font-title;
+            line-height: 52px;
+        }
+
+        @media screen and (max-width:$mobile-end) {
+            font-size: $primary-title-small;
+            line-height: 38px;
+        }
+
+        @media screen and (max-width:$mobile) {
+            font-size: $secondary-title-small;
+           
+        }
+    }
+
+    &-text {
+        font-family: $primary-font-title;
+        font-size: $default-font-size;
+        line-height: 22px;
+        letter-spacing: 0.3em;
+        margin: 20px auto 0;
+        color: $default-color-white;
+
+        @media screen and (max-width:$desktop-small) {
+            font-size: $font-size-btn;
+            line-height: 18px;
+            margin: 10px auto;
+        }
+    }
 }
 
 .subtitle {

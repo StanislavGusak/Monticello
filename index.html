@@ -21,33 +21,46 @@
             <div class="navigation">
                 <div class="navigation__block">
                     <div class="header__logo">
-                        <a href="" class="header__logo-link">
+                        <a href="#" class="header__logo-link">
                             <img src="./images/img/Logo.png" alt="Monticello" class="logo">
                         </a>
                     </div>
                     <ul class="nav" id="menu">
                         <li class="nav__list">
-                            <a href="#header" class="nav__list-link">
-                                ABOUT US
-                            </a>
+                            <a href="#header" class="nav__list-link">ABOUT US</a>
                         </li>
                         <li class="nav__list">
-                            <a href="#projects" class="nav__list-link">
-                                PROJECTS
-                            </a>
+                            <a href="#projects" class="nav__list-link">PROJECTS</a>
                         </li>
                         <li class="nav__list">
-                            <a href="#news" class="nav__list-link">
-                                NEWS
-                            </a>
+                            <a href="#news" class="nav__list-link">NEWS</a>
                         </li>
                         <li class="nav__list">
-                            <a href="#contacts" class="nav__list-link">
-                                CONTACT
-                            </a>
+                            <a href="#contacts" class="nav__list-link">CONTACT</a>
                         </li>
                     </ul>
-                    <ul class="social">
+                    <div class="mobile">
+                        <div class="mobile__btn">
+                            <span class="mobile__btn-line"></span>
+                            <span class="mobile__btn-line"></span>
+                            <span class="mobile__btn-line"></span>
+                        </div>
+                        <ul class="mobile__menu">
+                            <li class="mobile__menu-list">
+                                <a href="#header" class="mobile__menu-link">ABOUT US</a>
+                            </li>
+                            <li class="mobile__menu-list">
+                                <a href="#projects" class="mobile__menu-link">PROJECTS</a>
+                            </li>
+                            <li class="mobile__menu-list">
+                                <a href="#news" class="mobile__menu-link">NEWS</a>
+                            </li>
+                            <li class="mobile__menu-list">
+                                <a href="#contacts" class="mobile__menu-link">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="social social-header">
                         <li class="social__list">
                             <a href="" class="social__list-link btn">
                                 <svg class="icon">
@@ -74,24 +87,34 @@
             </div>
             <div class="slider">
                 <div class="banner">
-                    <h1 class="title">SIMPLE & MODERN</h1>
-                    <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                    <div class="banner__item">
+                        <h1 class="banner__item-title">SIMPLE & MODERN</h1>
+                        <p class="banner__item-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                    </div>
                 </div>
                 <div class="banner">
-                    <h1 class="title">PERFECT & BEAUTIFUL</h1>
-                    <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                    <div class="banner__item">
+                        <h1 class="banner__item-title">PERFECT & BEAUTIFUL</h1>
+                        <p class="banner__item-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                    </div>
                 </div>
                 <div class="banner">
-                    <h1 class="title">MONTICELLO</h1>
-                    <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                    <div class="banner__item">
+                        <h1 class="banner__item-title">MONTICELLO</h1>
+                        <p class="banner__item-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                    </div>
                 </div>
                 <div class="banner">
-                    <h1 class="title">MODERN & SIMPLE</h1>
-                    <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                    <div class="banner__item">
+                        <h1 class="banner__item-title">MODERN & SIMPLE</h1>
+                        <p class="banner__item-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                    </div>
                 </div>
                 <div class="banner">
-                    <h1 class="title">WORLD BUILDINGS</h1>
-                    <p class="banner__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                    <div class="banner__item">
+                        <h1 class="banner__item-title">WORLD BUILDINGS</h1>
+                        <p class="banner__item-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                    </div>
                 </div>
             </div>
             <button type="button" class="btn btn-banner">
@@ -107,8 +130,10 @@
             <section class="project__first">
                 <div class="wrapper">
                     <div class="block">
-                        <div class="block__img">
-                            <img src="./images/img/Project-first.png" alt="Mask Group" class="block__img-inner"></img>
+                        <div class="block__project">
+                            <div class="block__project-img">
+                                <img src="./images/img/Project-first.png" alt="Mask Group" class="project__image"></img>
+                            </div>
                         </div>
                         <div class="block__inner">
                             <p class="block__inner-text">
@@ -139,8 +164,10 @@
             <section class="project__second">
                 <div class="wrapper">
                     <div class="block">
-                        <div class="block__img">
-                            <img src="./images/img/Project-second.png" alt="building" class="block__img-inner"></img>
+                        <div class="block__project">
+                            <div class="block__project-img">
+                                <img src="./images/img/Project-second.png" alt="Mask Group" class="project__image"></img>
+                            </div>
                         </div>
                         <div class="block__inner">
                             <p class="block__inner-text">
@@ -296,30 +323,30 @@
                 <div class="gallery__block">
                     <div class="gallery__block-first">
                         <a data-fancybox="gallery" href="./images/img/gallery-first.png">
-                            <img class="rounded image" src="./images/img/gallery-first.png"/>
+                            <img class="rounded image" src="./images/img/gallery-first.png" />
                             <svg class="icon">
-                              <use xlink:href="./images/sprite/svg_sprite.svg#search"></use>
-                          </svg>
-                        </a>  
+                                <use xlink:href="./images/sprite/svg_sprite.svg#search"></use>
+                            </svg>
+                        </a>
                     </div>
                     <div class="gallery__block-second">
                         <a data-fancybox="gallery" href="./images/img/gallery-second.png">
-                            <img class="rounded image" src="./images/img/gallery-second.png"/>
+                            <img class="rounded image" src="./images/img/gallery-second.png" />
                         </a>
                     </div>
                     <div class="gallery__block-third">
                         <a data-fancybox="gallery" href="./images/img/gallery-third.png">
-                            <img class="rounded image" src="./images/img/gallery-third.png"/>
+                            <img class="rounded image" src="./images/img/gallery-third.png" />
                         </a>
                     </div>
                     <div class="gallery__block-fourth">
                         <a data-fancybox="gallery" href="./images/img/gallery-fourth.png">
-                            <img class="rounded image" src="./images/img/gallery-fourth.png"/>
+                            <img class="rounded image" src="./images/img/gallery-fourth.png" />
                         </a>
                     </div>
                     <div class="gallery__block-fifth">
                         <a data-fancybox="gallery" href="./images/img/gallery-fifth.png">
-                            <img class="rounded image" src="./images/img/gallery-fifth.png"/>
+                            <img class="rounded image" src="./images/img/gallery-fifth.png" />
                         </a>
                     </div>
                 </div>

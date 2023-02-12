@@ -61,3 +61,12 @@ Fancybox.bind('[data-fancybox="gallery"]', {
     minScreenHeight: 0,
   },
 });
+
+
+let menuBtn = document.querySelector('.mobile__btn');
+let menu = document.querySelector('.mobile__menu');
+
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+})

@@ -6,6 +6,14 @@
         &::before {
             background-color: $default-color-blue;
             margin-top: 100px;
+
+            @media screen and (max-width:$desktop) {
+                margin-top: 80px;
+            }
+
+            @media screen and (max-width:$tablet) {
+                margin-top: 60px;
+            }
         }
     }
 
@@ -13,25 +21,34 @@
         margin-top: 90px;
         position: relative;
 
+        @media screen and (max-width:$desktop) {
+            margin-top: 70px;
+        }
+
+        @media screen and (max-width:$tablet) {
+            margin-top: 50px;
+        }
+
         .block {
-
             &__inner {
-                width: 40%;
+                max-width: 41%;
+                margin-left: 70px;
+    
+                @media screen and (max-width:$desktop) {
+                    margin-left: 50px;
+                }
             }
+        }
 
-            &__img {
-                margin-top: auto;
+        .block__project-img {
 
-                &::before {
-                    content: '';
-                    display: block;
-                    width: 585px;
-                    height: 470px;
-                    background-color: $color-blue;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: -1;
+            &::before {
+                background-color: $color-blue;
+                left: 0;
+
+                @media screen and (max-width:$desktop) {
+                    height: 400px;
+                    max-width: 525px;
                 }
             }
         }
@@ -44,26 +61,28 @@
         .block {
             flex-direction: row-reverse;
 
-            &__img {
-                margin-top: auto;
+            &__inner {
+                max-width: 50%;
+                margin-right: 70px;
 
-                &::after {
-                    content: '';
-                    display: block;
-                    width: 585px;
-                    height: 470px;
-                    background-color: $color-purple;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    z-index: -1;
+                @media screen and (max-width:$desktop) {
+                    margin-right: 50px;
                 }
             }
-
-            &__inner {
-                width: 41%;
-            }
         }
+
+        .block__project-img {
+
+            &::before {
+                background-color: $color-purple;
+                right: 0;
+
+                @media screen and (max-width:$desktop) {
+                    height: 400px;
+                    max-width: 525px;
+                }
+            }
+        } 
     }
 }
 
@@ -71,13 +90,61 @@
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width:$desktop) {
+        padding: 0 50px;
+    }
+
+    &__project {
+        margin-top: auto;
+
+        &-img {
+
+            &::before {
+                content: '';
+                display: block;
+                width: 100%;
+                max-width: 585px;
+                height: 470px;
+                position: absolute;
+                top: 0;
+                z-index: -1;
+
+                @media screen and (max-width:$desktop) {
+                    height: 400px;
+                    max-width: 525px;
+                }
+            }
+            
+        &__image {
+            display: block;
+            width: 100%;
+    
+            @media screen and (max-width:$desktop) {
+                max-width: 570px;
+            }
+    
+            @media screen and (max-width:$desktop-small) {
+                max-width: 540px;
+            }
+        }
+        }
+    }
+
     &__inner {
 
         &-text {
             font-family: $primary-font-title;
             font-size: $default_font-subtitle;
             line-height: 27px;
-            margin-top: 151px;
+            margin-top: 150px;
+
+            @media screen and (max-width:$desktop) {
+                margin-top: 120px;
+            }
+
+            // @media screen and (max-width:$desktop-small) {
+            //     margin-top: 90px;
+            // }
         }
 
         &-title {
@@ -85,11 +152,20 @@
             font-weight: $secondary-font-weight;
             font-size: $default_font-title;
             line-height: 54px;
+
+            @media screen and (max-width:$desktop) {
+                font-size: $primary-title-small;
+                line-height: 46px;
+
+            }
         }
 
         &-description {
             line-height: 30px;
             margin-top: 19px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 87px;
         }
 
         &-location {
