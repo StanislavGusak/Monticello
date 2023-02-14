@@ -2,17 +2,29 @@
 
     &__title {
         color: $default-color-blue;
+        text-align: center;
+
+
+        @media screen and (max-width:$desktop) {
+            font-size: $primary-title-small;
+            line-height: 38px;
+        }
+
+        @media screen and (max-width:$mobile-end) {
+            font-size: $secondary-title-small;
+            line-height: 32px;
+        }
 
         &::before {
             background-color: $default-color-blue;
             margin-top: 100px;
 
-            @media screen and (max-width:$desktop) {
-                margin-top: 80px;
-            }
+            // @media screen and (max-width:$desktop-small) {
+            //     margin-top: 80px;
+            // }
 
             @media screen and (max-width:$tablet) {
-                margin-top: 60px;
+                margin-top: 70px;
             }
         }
     }
@@ -25,17 +37,21 @@
             margin-top: 70px;
         }
 
-        @media screen and (max-width:$tablet) {
+        @media screen and (max-width:$tablet-end) {
             margin-top: 50px;
         }
 
         .block {
+
             &__inner {
-                max-width: 41%;
                 margin-left: 70px;
-    
+
                 @media screen and (max-width:$desktop) {
                     margin-left: 50px;
+                }
+
+                @media screen and (max-width:$tablet-end) {
+                    margin: 0;
                 }
             }
         }
@@ -45,12 +61,28 @@
             &::before {
                 background-color: $color-blue;
                 left: 0;
-
-                @media screen and (max-width:$desktop) {
-                    height: 400px;
-                    max-width: 525px;
-                }
             }
+        }
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+
+        @media screen and (max-width:$desktop) {
+            max-width: 540px;
+        }
+
+        @media screen and (max-width:$desktop-small) {
+            max-width: 490px;
+        }
+
+        @media screen and (max-width:$tablet-end) {
+            max-width: 630px;
+        }
+
+        @media screen and (max-width:$mobile-end) {
+            max-width: 100%;
         }
     }
 
@@ -58,15 +90,45 @@
         margin-top: 120px;
         position: relative;
 
+        @media screen and (max-width:$tablet-end) {
+            margin-top: 50px;
+        }
+
         .block {
             flex-direction: row-reverse;
 
+            @media screen and (max-width:$mobile-end) {
+                flex-direction: row;
+            }
+
+
             &__inner {
-                max-width: 50%;
                 margin-right: 70px;
 
                 @media screen and (max-width:$desktop) {
                     margin-right: 50px;
+                }
+
+                @media screen and (max-width:$tablet-end) {
+                    margin-right: 0;
+                    margin-left: auto;
+                    text-align: end;
+                }
+
+                @media screen and (max-width:$mobile-end) {
+                    margin: 0;
+                    text-align: left;
+                }
+
+                &-location {
+
+                    @media screen and (max-width:$tablet-end) {
+                        justify-content: right;
+                    }
+
+                    @media screen and (max-width:$mobile-end) {
+                        justify-content: left;
+                    }
                 }
             }
         }
@@ -76,13 +138,12 @@
             &::before {
                 background-color: $color-purple;
                 right: 0;
-
-                @media screen and (max-width:$desktop) {
-                    height: 400px;
-                    max-width: 525px;
-                }
             }
-        } 
+        }
+
+        .project__image {
+            margin-left: auto;
+        }
     }
 }
 
@@ -90,14 +151,24 @@
     display: flex;
     justify-content: space-between;
 
-    @media screen and (max-width:$desktop) {
-        padding: 0 50px;
+    @media screen and (max-width:$tablet-end) {
+        display: block;
     }
 
     &__project {
         margin-top: auto;
 
         &-img {
+
+            @media screen and (max-width:$desktop) {
+                padding-top: 60px;
+            }
+
+            @media screen and (max-width:$mobile-end) {
+                padding-top: 0;
+                margin: 0 auto;
+                width: 100%;
+            }
 
             &::before {
                 content: '';
@@ -111,26 +182,39 @@
 
                 @media screen and (max-width:$desktop) {
                     height: 400px;
-                    max-width: 525px;
+                    max-width: 490px;
+                }
+
+                @media screen and (max-width:$desktop-small) {
+                    height: 380px;
+                    max-width: 490px;
+                }
+
+                @media screen and (max-width:$tablet-end) {
+                    max-width: 585px;
+                    height: 450px;
+
+                }
+
+                @media screen and (max-width:$mobile-end) {
+                    display: none;
                 }
             }
-            
-        &__image {
-            display: block;
-            width: 100%;
-    
-            @media screen and (max-width:$desktop) {
-                max-width: 570px;
-            }
-    
-            @media screen and (max-width:$desktop-small) {
-                max-width: 540px;
-            }
-        }
         }
     }
 
     &__inner {
+        max-width: 43%;
+
+        @media screen and (max-width:$tablet-end) {
+            margin: 0;
+            max-width: 75%;
+        }
+
+        @media screen and (max-width:$mobile-end) {
+            margin: 0 auto;
+            max-width: 100%;
+        }
 
         &-text {
             font-family: $primary-font-title;
@@ -139,12 +223,22 @@
             margin-top: 150px;
 
             @media screen and (max-width:$desktop) {
-                margin-top: 120px;
+                margin-top: 100px;
             }
 
-            // @media screen and (max-width:$desktop-small) {
-            //     margin-top: 90px;
-            // }
+            @media screen and (max-width:$desktop) {
+                margin-top: 80px;
+            }
+
+            @media screen and (max-width:$tablet-end) {
+                margin-top: 60px;
+            }
+
+            @media screen and (max-width:$mobile-end) {
+                margin-top: 50px;
+                font-size: $default-font-size;
+                line-height: 18px;
+            }
         }
 
         &-title {
@@ -155,8 +249,12 @@
 
             @media screen and (max-width:$desktop) {
                 font-size: $primary-title-small;
-                line-height: 46px;
+                line-height: 38px;
+            }
 
+            @media screen and (max-width:$mobile-end) {
+                font-size: $secondary-title-small;
+                line-height: 32px;
             }
         }
 
@@ -172,6 +270,10 @@
             display: flex;
             align-items: center;
             margin: 60px 0 26px;
+
+            @media screen and (max-width:$tablet-end) {
+                margin: 40px 0 26px;
+            }
 
             .icon {
                 width: 9px;

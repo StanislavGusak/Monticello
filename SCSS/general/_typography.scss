@@ -30,7 +30,6 @@
 
         @media screen and (max-width:$mobile) {
             font-size: $secondary-title-small;
-           
         }
     }
 
@@ -55,7 +54,16 @@
     font-weight: $secondary-font-weight;
     font-size: $default-font-title;
     line-height: 54px;
-    text-align: center;
+
+    @media screen and (max-width:$desktop) {
+        font-size: $primary-title-small;
+        line-height: 38px;
+    }
+
+    @media screen and (max-width:$mobile-end) {
+        font-size: $secondary-title-small;
+        line-height: 32px;
+    }
 
     &::before {
         content: '';

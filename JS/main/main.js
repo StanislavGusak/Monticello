@@ -2,14 +2,36 @@ const modules = {
   news:
     $('.news__block').slick({
       dots: true,
+      arrows:true,
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
-      variableWidth: true,
       autoplay: true,
       autoplaySpeed: 4000,
+
       prevArrow: "<button type='button' class='btn__slick-prev btn btn-slider'><svg class='icon'><use xlink:href='./images/sprite/svg_sprite.svg#prev'></use></svg></button>",
       nextArrow: "<button type='button' class='btn__slick-next btn btn-slider'><svg class='icon'><use xlink:href='./images/sprite/svg_sprite.svg#next'></use></svg></button>",
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            touchMove: true,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows:false,
+            autoplay: true,
+            touchMove: true,
+          }
+        },
+      ],
     }),
 
   banner:
@@ -19,6 +41,8 @@ const modules = {
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 4000,
     }),
 
   scrollToSections:
@@ -37,8 +61,6 @@ const modules = {
         scrollTop: $('.project').offset().top
       }, 1000);
     })
-
-    
 };
 
 
@@ -66,7 +88,7 @@ Fancybox.bind('[data-fancybox="gallery"]', {
 let menuBtn = document.querySelector('.mobile__btn');
 let menu = document.querySelector('.mobile__menu');
 
-menuBtn.addEventListener('click', function(){
-	menuBtn.classList.toggle('active');
-	menu.classList.toggle('active');
+menuBtn.addEventListener('click', function () {
+  menuBtn.classList.toggle('active');
+  menu.classList.toggle('active');
 })

@@ -3,9 +3,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 34.8vw;
+    height: 43.8vw;
     width: 100%;
     position: relative;
+    padding: 100px 0;
+
+    @media screen and (max-width:$mobile-end) {
+        height: 43.8vw;
+    }
 
     &__form {
         background: $default-color-white;
@@ -13,16 +18,32 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        max-width: 770px;
-        width: 100%;
+        width: 770px;
         padding: 60px 60px 67px;
+        margin: 0 auto;
         position: absolute;
         z-index: 1;
         bottom: 0;
         left: 50%;
-        transform: translate(-50%,34%);
+        transform: translate(-50%, 34%);
+
+        @media screen and (max-width:$tablet-end) {
+            width: 668px;
+            padding: 30px;
+        }
+
+        @media screen and (max-width:$mobile-end) {
+            width: 520px;
+            position: static;
+            transform: translate(0,0);
+        }
+
+        @media screen and (max-width:$mobile) {
+            width: 300px;
+        }
 
         &-title {
+            text-align: center;
 
             &::before {
                 background: $default-color-blue;
@@ -34,15 +55,51 @@
             display: flex;
             justify-content: space-between;
 
+            @media screen and (max-width:$mobile-end) {
+                display: block;
+                width: 100%;
+            }
+
             .contacts {
-                width: 47%;
+                width: 50%;
+
+                @media screen and (max-width:$tablet-end) {
+                    font-size: $font-size-btn;
+                }
+
+                @media screen and (max-width:$mobile-end) {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+
+                @media screen and (max-width:$mobile) {
+                    display: block;
+                }
 
                 &__info {
                     display: flex;
                     align-items: center;
 
+                    @media screen and (max-width:$mobile-end) {
+                        width: 50%;
+                    }
+
+                    @media screen and (max-width:$mobile) {
+                        width: 100%;
+                    }
+
                     &:not(:first-child) {
                         margin-top: 28px;
+
+                        @media screen and (max-width:$mobile-end) {
+                            margin: 0;
+                        }
+
+                        @media screen and (max-width:$mobile-end) {
+                            margin-top: 10px;
+                        }
                     }
                 }
 
@@ -59,6 +116,15 @@
                 margin-left: 54px;
                 text-align: right;
 
+                @media screen and (max-width:$mobile-end) {
+                    width: 100%;
+                    margin: 20px 0 0;
+                    text-align: left;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+
                 .input {
                     width: 100%;
                     padding-bottom: 10px;
@@ -70,6 +136,19 @@
                     color: rgba($color: $default-color-blue, $alpha: 0.5);
                     outline: none;
                     background-color: transparent;
+
+                    @media screen and (max-width:$tablet-end) {
+                        font-size: $font-size-btn;
+                        line-height: 18px;
+                    }
+
+                    @media screen and (max-width:$mobile-end) {
+                        width: 48%;
+                    }
+
+                    @media screen and (max-width:$mobile) {
+                        width: 100%;
+                    }
 
                     &::placeholder {
                         color: rgba($color: $default-color-blue, $alpha: 0.5);
@@ -84,6 +163,14 @@
 
                 .email {
                     margin-top: 33px;
+
+                    @media screen and (max-width:$mobile-end) {
+                        margin: 0;
+                    }
+
+                    @media screen and (max-width:$mobile) {
+                        margin-top: 33px;
+                    }
                 }
             }
         }

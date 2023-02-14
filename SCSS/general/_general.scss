@@ -25,5 +25,11 @@ body {
     width: 100%;
     max-width: $max-content-width;
 
-    @media screen and (max-width:$desktop) {}
+    @media screen and (max-width:$desktop) {
+        padding: 0 50px;
+    }
+
+    @media screen and (max-width:$mobile-end) {
+        padding: 0 30px;
+    }
 }

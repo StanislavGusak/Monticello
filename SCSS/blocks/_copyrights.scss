@@ -8,6 +8,12 @@
     left: 50%;
     transform: translate(-50%,-60%);
 
+    @media screen and (max-width:$mobile-end) {
+        position: static;
+        transform: translate(0,0);
+        flex-direction: column;
+    }
+
     .copyrights {
 
         &__text {
