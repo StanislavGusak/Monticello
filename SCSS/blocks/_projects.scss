@@ -19,10 +19,6 @@
             background-color: $default-color-blue;
             margin-top: 100px;
 
-            // @media screen and (max-width:$desktop-small) {
-            //     margin-top: 80px;
-            // }
-
             @media screen and (max-width:$tablet) {
                 margin-top: 70px;
             }
