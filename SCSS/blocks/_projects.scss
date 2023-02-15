@@ -152,7 +152,7 @@
     }
 
     &__project {
-        margin-top: auto;
+        margin-top: 56px;
 
         &-img {
 
@@ -200,7 +200,7 @@
     }
 
     &__inner {
-        max-width: 43%;
+        max-width: 40%;
 
         @media screen and (max-width:$tablet-end) {
             margin: 0;

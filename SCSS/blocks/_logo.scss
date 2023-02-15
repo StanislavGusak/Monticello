@@ -2,6 +2,7 @@
 
     .logo {
         width: 100%;
+        max-width: 241px;
 
         @media screen and (max-width:$tablet) {
             width: 100%;
