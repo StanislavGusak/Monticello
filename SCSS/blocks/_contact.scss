@@ -8,8 +8,13 @@
     position: relative;
     padding: 100px 0;
 
+
     @media screen and (max-width:$mobile-end) {
-        height: 43.8vw;
+        height: 66.8vw;
+    }
+
+    @media screen and (max-width:$mobile) {
+       height: 134.2vw;
     }
 
     &__form {
@@ -18,7 +23,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        width: 770px;
+        max-width: 770px;
+        width: 100%;
+        min-height: 450px;
         padding: 60px 60px 67px;
         margin: 0 auto;
         position: absolute;
@@ -28,18 +35,23 @@
         transform: translate(-50%, 34%);
 
         @media screen and (max-width:$tablet-end) {
-            width: 668px;
+            max-width: 668px;
+            min-height: 350px;
             padding: 30px;
         }
 
         @media screen and (max-width:$mobile-end) {
-            width: 520px;
-            position: static;
-            transform: translate(0,0);
+            max-width: 520px;
+            min-height: 380px;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            transform: translate(-50%,-50%);
         }
 
         @media screen and (max-width:$mobile) {
-            width: 300px;
+            max-width: 300px;
+            min-height: 500px;
         }
 
         &-title {

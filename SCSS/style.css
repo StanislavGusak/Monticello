@@ -173,14 +173,19 @@ body {
   height: 50vw;
   position: relative;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .header__container {
-    height: 56vw;
+    height: 70vw;
   }
 }
 @media screen and (max-width: 768px) {
   .header__container {
-    height: 66vw;
+    height: 100vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header__container {
+    height: 140vw;
   }
 }
 
@@ -193,12 +198,13 @@ body {
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  height: 34.3vh;
+  height: 34.3vw;
   position: relative;
+  padding: 205px 0;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1359px) {
   .footer__container {
-    height: 100vh;
+    height: 46.3vw;
   }
 }
 
@@ -227,13 +233,9 @@ body {
     padding: 0 50px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .navigation {
-    padding: 0 30px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .navigation {
+    padding: 10px 30px;
     top: 0;
   }
 }
@@ -244,6 +246,11 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 1170px;
+}
+.navigation__block .test {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 .nav {
@@ -307,6 +314,7 @@ body {
   height: 30px;
   position: relative;
   z-index: 2;
+  margin-left: auto;
 }
 .mobile__btn.active .mobile__btn-line:nth-child(1) {
   display: none;
@@ -341,12 +349,23 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 100%;
-  height: 100vh;
+  height: 70vw;
   padding-top: 50px;
   background-color: #55B7FF;
   transform: translateX(-100%);
   transition: transform 500ms ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .mobile__menu {
+    height: 100vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  .mobile__menu {
+    height: 140vw;
+  }
 }
 .mobile__menu.active {
   transform: translateX(0);
@@ -361,7 +380,7 @@ body {
   font-size: 22px;
   line-height: 18px;
   color: #FFFFFF;
-  padding: 15px;
+  padding: 10px;
 }
 .mobile__menu-link:focus {
   background-color: #FFFFFF;
@@ -374,6 +393,11 @@ body {
   justify-content: space-between;
 }
 @media screen and (max-width: 1023px) {
+  .social-header {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
   .social-header {
     display: none;
   }
@@ -976,7 +1000,12 @@ body {
 }
 @media screen and (max-width: 767px) {
   .contact {
-    height: 43.8vw;
+    height: 66.8vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contact {
+    height: 134.2vw;
   }
 }
 .contact__form {
@@ -985,7 +1014,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 770px;
+  max-width: 770px;
+  width: 100%;
+  min-height: 450px;
   padding: 60px 60px 67px;
   margin: 0 auto;
   position: absolute;
@@ -996,20 +1027,25 @@ body {
 }
 @media screen and (max-width: 1023px) {
   .contact__form {
-    width: 668px;
+    max-width: 668px;
+    min-height: 350px;
     padding: 30px;
   }
 }
 @media screen and (max-width: 767px) {
   .contact__form {
-    width: 520px;
-    position: static;
-    transform: translate(0, 0);
+    max-width: 520px;
+    min-height: 380px;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
   }
 }
 @media screen and (max-width: 576px) {
   .contact__form {
-    width: 300px;
+    max-width: 300px;
+    min-height: 500px;
   }
 }
 .contact__form-title {
@@ -1160,12 +1196,34 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -60%);
+  margin: 0 auto;
+}
+@media screen and (max-width: 1023px) {
+  .footer__block {
+    max-width: 668px;
+  }
 }
 @media screen and (max-width: 767px) {
   .footer__block {
-    position: static;
-    transform: translate(0, 0);
-    flex-direction: column;
+    max-width: 520px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer__block {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer__block .copyrights {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer__block .copyrights__logo {
+    margin-top: 50px;
   }
 }
 .footer__block .copyrights__text {
@@ -1175,6 +1233,11 @@ body {
   line-height: 17px;
   color: #FFFFFF;
   margin-top: 41px;
+}
+@media screen and (max-width: 576px) {
+  .footer__block .copyrights__text {
+    margin-top: 100px;
+  }
 }
 .footer__block .copyrights__text-inner::after {
   content: "©";

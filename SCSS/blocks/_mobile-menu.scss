@@ -3,6 +3,7 @@
 
     @media screen and (max-width: $tablet-end) {
         display: block;
+
     }
 
     &__btn {
@@ -10,7 +11,7 @@
         height: 30px;
         position: relative;
         z-index: 2;
-        // overflow: hidden;
+        margin-left: auto;
 
         &.active .mobile__btn-line:nth-child(1) {
             display: none;
@@ -47,41 +48,49 @@
     }
 
     &__menu {
-		display: flex;
-		flex-direction: column;
+        display: flex;
+        flex-direction: column;
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 1;
         width: 100%;
-        height: 100vh;
-		padding-top: 50px;
-		// min-height: 242px;
+        height: 70vw;
+        padding-top: 50px;
         background-color: $color-blue;
         transform: translateX(-100%);
         transition: transform 500ms ease-in-out;
+      
+        @media screen and (max-width:$tablet) {
+            height: 100vw;
+        }
+        
+        @media screen and (max-width:$mobile) {
+            height: 140vw;
+        }
 
         &.active {
             transform: translateX(0);
         }
 
         &-list {
-			background-color: $color-blue;
+            background-color: $color-blue;
             list-style-type: none;
         }
 
-		&-link {
-			display: block;
-			font-family: $primary-font-nav;
+        &-link {
+            display: block;
+            font-family: $primary-font-nav;
             font-size: $default-font-subtitle;
             line-height: 18px;
             color: $default-color-white;
-			padding: 15px;
+            padding: 10px;
 
-			&:focus {
-				background-color: $default-color-white;
-				transition: all 300ms ease-in-out;
-				color: $color-grey;
-			}
-		}
+            &:focus {
+                background-color: $default-color-white;
+                transition: all 300ms ease-in-out;
+                color: $color-grey;
+            }
+        }
     }
 }

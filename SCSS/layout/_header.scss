@@ -10,12 +10,16 @@
         height: 50vw;
         position: relative;
 
-        @media screen and (max-width:$tablet-end) {
-            height: 56vw;
+        @media screen and (max-width:$desktop-small) {
+            height: 70vw;
         }
 
         @media screen and (max-width:$tablet) {
-            height: 66vw;
+            height: 100vw;
+        }
+        
+        @media screen and (max-width:$mobile) {
+            height: 140vw;
         }
     }
 }

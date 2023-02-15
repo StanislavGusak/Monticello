@@ -3,7 +3,12 @@
     justify-content: space-between;
 
     &-header {
+
         @media screen and (max-width:$tablet-end) {
+            margin-right: 30px;
+        }
+
+        @media screen and (max-width:$mobile) {
             display: none;
         }
     }

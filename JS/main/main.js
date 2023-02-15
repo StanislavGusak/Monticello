@@ -1,8 +1,8 @@
 const modules = {
-  news:
+  newsSlider() {
     $('.news__block').slick({
       dots: true,
-      arrows:true,
+      arrows: true,
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -26,15 +26,16 @@ const modules = {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows:false,
+            arrows: false,
             autoplay: true,
             touchMove: true,
           }
-        },
-      ],
-    }),
+        }
+      ]
+    })
+  },
 
-  banner:
+  banner() {
     $('.slider').slick({
       dots: true,
       arrows: false,
@@ -43,52 +44,70 @@ const modules = {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 4000,
-    }),
+    })
+  },
 
-  scrollToSections:
+  scrollToSections() {
     $(document).ready(function () {
-      $('#menu').on('click', 'a', function (event) {
+      $('#menu, #mobile').on('click', 'a', function (event) {
         event.preventDefault();
         let id = $(this).attr('href');
         let top = $(id).offset().top;
         $('html, body').animate({ scrollTop: top }, 1500);
-      });
-    }),
+      })
+    })
+  },
 
-  scroll:
-    $('.btn-banner').click(() => {
+  scrollBanner() {
+    $('.btn-banner').on('click', $('#project'), function() {
       $('html, body').animate({
         scrollTop: $('.project').offset().top
       }, 1000);
     })
-};
-
-
-Fancybox.bind('[data-fancybox="gallery"]', {
-  Toolbar: false,
-  animated: false,
-  dragToClose: false,
-  showClass: false,
-  hideClass: false,
-  closeButton: "top",
-
-  Image: {
-    click: "close",
-    wheel: "slide",
-    zoom: false,
-    fit: "cover",
+  },
+  
+  fancyBox() {
+    Fancybox.bind('[data-fancybox="gallery"]', {
+      Toolbar: false,
+      animated: false,
+      dragToClose: false,
+      showClass: false,
+      hideClass: false,
+      closeButton: "top",
+    
+      Image: {
+        click: "close",
+        wheel: "slide",
+        zoom: false,
+        fit: "cover",
+      },
+    
+      Thumbs: {
+        minScreenHeight: 0,
+      },
+    })
   },
 
-  Thumbs: {
-    minScreenHeight: 0,
+  mobileMenu() {
+    let menuBtn = $('.mobile__btn');
+    let menu = $('.mobile__menu');
+  
+    $(menuBtn).on('click', function() {
+      $(menuBtn).toggleClass('active');
+      $(menu).toggleClass('active');
+    })
   },
-});
+  
+  init() {
+    this.newsSlider()
+    this.banner()
+    this.scrollToSections()
+    this.scrollBanner()
+    this.fancyBox()
+    this.mobileMenu()
+  },
+}
+modules.init()
 
 
-let menuBtn = document.querySelector('.mobile__btn');
-let menu = document.querySelector('.mobile__menu');
 
-menuBtn.addEventListener('click', function () {
-  menuBtn.classList.toggle('active');
-  menu.classList.toggle('active');
-})

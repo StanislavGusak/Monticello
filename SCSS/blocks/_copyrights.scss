@@ -6,15 +6,35 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-60%);
+    transform: translate(-50%, -60%);
+    margin: 0 auto;
+
+    @media screen and (max-width:$tablet-end) {
+        max-width: 668px;
+    }
 
     @media screen and (max-width:$mobile-end) {
-        position: static;
-        transform: translate(0,0);
-        flex-direction: column;
+        max-width: 520px;
+    }
+
+    @media screen and (max-width:$mobile) {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
     }
 
     .copyrights {
+
+        @media screen and (max-width:$mobile) {
+            text-align: center;
+        }
+
+        &__logo {
+            @media screen and (max-width:$mobile) {
+                margin-top: 50px;
+            }
+        }
 
         &__text {
             font-family: $primary-font-title;
@@ -23,6 +43,10 @@
             line-height: 17px;
             color: $default-color-white;
             margin-top: 41px;
+
+            @media screen and (max-width:$mobile) {
+                margin-top: 100px;
+            }
 
             &-inner {
 
