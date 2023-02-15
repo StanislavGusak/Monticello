@@ -767,15 +767,11 @@ body {
   background-color: #FFFFFF;
 }
 
-.slick {
-  margin: 0 15px;
-}
-
 .post {
   width: 100%;
   max-width: 370px;
   background: #FFFFFF;
-  margin: 0 auto;
+  margin: 0 15px;
 }
 .post__img {
   width: 100%;
