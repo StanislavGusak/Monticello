@@ -673,9 +673,6 @@ body {
 .block__inner-description {
   line-height: 30px;
   margin-top: 19px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 87px;
 }
 .block__inner-location {
   display: flex;
@@ -780,12 +777,15 @@ body {
   line-height: 27px;
 }
 .post__inner-description {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-  max-height: 50px;
   line-height: 25px;
   margin-top: 15px;
+}
+.post__inner-description, .post__inner-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .post__inner-info {
   display: flex;
