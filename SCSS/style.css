@@ -214,7 +214,6 @@ body {
 }
 @media screen and (max-width: 768px) {
   .header__logo .logo {
-    width: 100%;
     max-width: 200px;
   }
 }
@@ -532,13 +531,8 @@ body {
   }
 }
 .project__second .block__inner {
-  max-width: 43%;
-  margin-right: 56px;
-}
-@media screen and (max-width: 1360px) {
-  .project__second .block__inner {
-    margin-right: 35px;
-  }
+  max-width: 42%;
+  margin-right: 45px;
 }
 @media screen and (max-width: 1023px) {
   .project__second .block__inner {
@@ -763,8 +757,7 @@ body {
 .news__title::before {
   background-color: #FFFFFF;
 }
-
-.slick {
+.news .slick {
   margin: 0 15px;
 }
 
@@ -776,8 +769,6 @@ body {
 }
 .post__img {
   width: 100%;
-  max-width: 370px;
-  height: 240px;
 }
 .post__inner {
   padding: 30px 20px;
@@ -789,13 +780,13 @@ body {
   line-height: 27px;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 50px;
+  max-height: 27px;
 }
 .post__inner-description {
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
-  height: 50px;
+  max-height: 50px;
   line-height: 25px;
   margin-top: 15px;
 }
@@ -816,7 +807,7 @@ body {
   margin-top: 7px;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 22px;
+  max-height: 22px;
 }
 .post__inner-info .info__data {
   font-family: "Montserrat", sans-serif;

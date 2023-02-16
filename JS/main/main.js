@@ -19,7 +19,7 @@ const modules = {
             slidesToScroll: 1,
             arrows: false,
             autoplay: true,
-            // touchMove: true,
+            touchMove: true,
           }
         },
         {
@@ -29,7 +29,7 @@ const modules = {
             slidesToScroll: 1,
             arrows: false,
             autoplay: true,
-            // touchMove: true,
+            touchMove: true,
           }
         }
       ]

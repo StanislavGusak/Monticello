@@ -4,7 +4,6 @@
         color: $default-color-blue;
         text-align: center;
 
-
         @media screen and (max-width:$desktop) {
             font-size: $primary-title-small;
             line-height: 38px;
@@ -103,14 +102,9 @@
                 flex-direction: row;
             }
 
-
             &__inner {
-                max-width: 43%;
-                margin-right: 56px;
-
-                @media screen and (max-width:$desktop) {
-                    margin-right: 35px;
-                }
+                max-width: 42%;
+                margin-right: 45px;
 
                 @media screen and (max-width:$tablet-end) {
                     margin-right: 0;

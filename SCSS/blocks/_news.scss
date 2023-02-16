@@ -51,11 +51,11 @@
         &::before {
             background-color: $default-color-white;
         }
-    }
-}
+    } 
 
-.slick {
-  margin: 0 15px;
+    .slick {
+        margin: 0 15px;
+    }
 }
 
 .post {
@@ -66,8 +66,6 @@
 
     &__img {
         width: 100%;
-        max-width: 370px;
-        height: 240px;
     }
 
     &__inner {
@@ -80,14 +78,14 @@
             line-height: 27px;
             overflow: hidden;
             text-overflow: ellipsis;
-            height: 50px;
+            max-height: 27px;
         }
 
         &-description {
             overflow: hidden;
             text-overflow: ellipsis;
             word-wrap: break-word;
-            height: 50px;
+            max-height: 50px;
             line-height: 25px;
             margin-top: 15px;
         }
@@ -95,7 +93,6 @@
         &-info {
             display: flex;
             margin-top: 39px;
-
 
             .picture {
                 border: none;
@@ -111,7 +108,7 @@
                     margin-top: 7px;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    height: 22px;
+                    max-height: 22px;
                 }
 
                 &__data {
