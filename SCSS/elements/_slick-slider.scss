@@ -1,11 +1,10 @@
 .news__block {
-    
 
     .slick-dots {
         position: absolute;
         left: 50%;
         display: flex;
-        bottom: -40px;
+        bottom: -50px;
         transform: translateX(-50%);
     
         & li {
@@ -21,10 +20,6 @@
     
             &:not(:last-child) {
                 margin-right: 40px;
-
-                // @media screen and (max-width:$desktop-small) {
-                //     margin-right: 20px;
-                // }
             }
     
             button {
@@ -37,15 +32,23 @@
 .btn__slick-prev {
     position: absolute;
     top: 50%;
-    left: -25px;
-    transform: translate(-50%);
+    left: -8%;
+    transform: translateY(-53%);
+
+    @media screen and (max-width:$desktop-small-end) {
+        left: -4%;
+    }
 }
 
 .btn__slick-next {
     position: absolute;
     top: 50%;
-    right: -65px;
-    transform: translate(-50%);
+    right: -8%;
+    transform: translateY(-53%);
+
+    @media screen and (max-width:$desktop-small-end) {
+        right: -4%;
+    }
 }
 
 .btn-slider {

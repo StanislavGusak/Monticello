@@ -17,8 +17,9 @@ const modules = {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
+            arrows: false,
             autoplay: true,
-            touchMove: true,
+            // touchMove: true,
           }
         },
         {
@@ -28,7 +29,7 @@ const modules = {
             slidesToScroll: 1,
             arrows: false,
             autoplay: true,
-            touchMove: true,
+            // touchMove: true,
           }
         }
       ]
@@ -44,6 +45,7 @@ const modules = {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 4000,
+      zIndex: 1,
     })
   },
 
@@ -59,13 +61,13 @@ const modules = {
   },
 
   scrollBanner() {
-    $('.btn-banner').on('click', $('#project'), function() {
+    $('.btn-banner').on('click', $('#project'), function () {
       $('html, body').animate({
         scrollTop: $('.project').offset().top
       }, 1000);
     })
   },
-  
+
   fancyBox() {
     Fancybox.bind('[data-fancybox="gallery"]', {
       Toolbar: false,
@@ -74,14 +76,14 @@ const modules = {
       showClass: false,
       hideClass: false,
       closeButton: "top",
-    
+
       Image: {
         click: "close",
         wheel: "slide",
         zoom: false,
         fit: "cover",
       },
-    
+
       Thumbs: {
         minScreenHeight: 0,
       },
@@ -91,13 +93,13 @@ const modules = {
   mobileMenu() {
     let menuBtn = $('.mobile__btn');
     let menu = $('.mobile__menu');
-  
-    $(menuBtn).on('click', function() {
+
+    $(menuBtn).on('click', function () {
       $(menuBtn).toggleClass('active');
       $(menu).toggleClass('active');
     })
   },
-  
+
   init() {
     this.newsSlider()
     this.banner()

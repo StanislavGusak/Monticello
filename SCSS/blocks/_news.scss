@@ -1,7 +1,6 @@
 .news {
     background: $background-news;
     margin-top: 150px;
-    // height: 61.1vw;
 
     @media screen and (max-width:$desktop) {
         margin-top: 100px;
@@ -18,8 +17,8 @@
     &__container {
         background-image: url(../images/img/background2.png);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background-size: contain;
+        background-position: bottom;
         margin: 0 auto;
         padding: 120px 0 170px;
         position: relative;
@@ -49,18 +48,21 @@
         color: $default-color-white;
         text-align: center;
 
-
         &::before {
             background-color: $default-color-white;
         }
     }
 }
 
+.slick {
+  margin: 0 15px;
+}
+
 .post {
     width: 100%;
     max-width: 370px;
     background: $default-color-white;
-    margin: 0 15px;
+    margin: 0 auto;
 
     &__img {
         width: 100%;

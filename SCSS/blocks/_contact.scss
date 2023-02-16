@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 43.8vw;
+    height: 43.7vw;
     width: 100%;
     position: relative;
     padding: 100px 0;
@@ -32,7 +32,7 @@
         z-index: 1;
         bottom: 0;
         left: 50%;
-        transform: translate(-50%, 34%);
+        transform: translate(-50%, 33%);
 
         @media screen and (max-width:$tablet-end) {
             max-width: 668px;
@@ -124,8 +124,7 @@
             }
 
             .form {
-                width: 50%;
-                margin-left: 54px;
+                width: 48%;
                 text-align: right;
 
                 @media screen and (max-width:$mobile-end) {

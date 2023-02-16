@@ -40,6 +40,7 @@
         .block {
 
             &__inner {
+                max-width: 40%;
                 margin-left: 70px;
 
                 @media screen and (max-width:$desktop) {
@@ -48,6 +49,11 @@
 
                 @media screen and (max-width:$tablet-end) {
                     margin: 0;
+                    max-width: 75%;
+                }
+
+                @media screen and (max-width:$mobile-end) {
+                    max-width: 100%;
                 }
             }
         }
@@ -99,21 +105,24 @@
 
 
             &__inner {
-                margin-right: 70px;
+                max-width: 43%;
+                margin-right: 56px;
 
                 @media screen and (max-width:$desktop) {
-                    margin-right: 50px;
+                    margin-right: 35px;
                 }
 
                 @media screen and (max-width:$tablet-end) {
                     margin-right: 0;
                     margin-left: auto;
                     text-align: end;
+                    max-width: 75%;
                 }
 
                 @media screen and (max-width:$mobile-end) {
                     margin: 0;
                     text-align: left;
+                    max-width: 100%;
                 }
 
                 &-location {
@@ -200,17 +209,8 @@
     }
 
     &__inner {
-        max-width: 40%;
 
-        @media screen and (max-width:$tablet-end) {
-            margin: 0;
-            max-width: 75%;
-        }
-
-        @media screen and (max-width:$mobile-end) {
-            margin: 0 auto;
-            max-width: 100%;
-        }
+       
 
         &-text {
             font-family: $primary-font-title;
