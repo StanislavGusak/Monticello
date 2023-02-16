@@ -76,9 +76,6 @@
             font-weight: $secondary-font-weight;
             font-size: $default-font-subtitle;
             line-height: 27px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-height: 50px;
         }
 
         &-description {

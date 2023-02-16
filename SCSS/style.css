@@ -778,9 +778,6 @@ body {
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 50px;
 }
 .post__inner-description {
   overflow: hidden;
